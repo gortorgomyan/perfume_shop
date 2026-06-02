@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'ESSENCE — A Whisper of Pure Sophistication</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="logo">L'ESSENCE</a>
+      <nav class="nav-main" aria-label="Main">
+        <a href="shop.html">Shop</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#journal">Journal</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn menu-toggle" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <button type="button" class="icon-btn" data-search-open aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+        </button>
+        <button type="button" class="icon-btn" aria-label="Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg>
+        </button>
+        <a href="checkout.html" class="icon-btn cart-link" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span class="cart-count" style="display:none">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero__bg" src="images/hero.jpg" alt="Luxury perfume bottle on a minimalist pedestal">
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1>A Whisper of Pure Sophistication</h1>
+        <p>Discover fragrances crafted for those who appreciate the quiet luxury of timeless elegance.</p>
+        <a href="shop.html" class="btn btn--primary">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Curated Essence</h2>
+        <div class="curated-grid">
+          <div class="curated-grid__large">
+            <img src="images/curated-1.jpg" alt="Perfume with botanical elements">
+          </div>
+          <div><img src="images/curated-2.jpg" alt="Elegant perfume detail"></div>
+          <div><img src="images/curated-3.jpg" alt="Citrus and fragrance notes"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="split-section">
+          <div class="split-section__image">
+            <img src="images/art-fragrance.jpg" alt="The art of crafting fragrance">
+          </div>
+          <div class="split-section__text">
+            <h2>The Art of Fragrance</h2>
+            <p>At L'ESSENCE, every scent begins as a story — woven from rare botanicals, precious resins, and the memory of places that linger long after you've left.</p>
+            <p>Our master perfumers blend tradition with innovation, creating compositions that unfold slowly on the skin, revealing new facets with each passing hour.</p>
+            <a href="shop.html" class="text-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">New Arrivals</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="images/product-amber.jpg" alt="Amber Sky">
+            </a>
+            <h3><a href="product.html">Amber Sky</a></h3>
+            <p class="price">$185.00</p>
+          </article>
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="images/product-velvet.jpg" alt="Rose &amp; Oud">
+            </a>
+            <h3><a href="product.html">Rose &amp; Oud</a></h3>
+            <p class="price">$210.00</p>
+          </article>
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="images/curated-2.jpg" alt="Velvet Dusk">
+            </a>
+            <h3><a href="product.html">Velvet Dusk</a></h3>
+            <p class="price">$195.00</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <h2>Join the Inner Circle</h2>
+      <p>Be the first to discover new collections, exclusive offers, and stories from our atelier.</p>
+      <form class="newsletter__form" action="#" method="post">
+        <input type="email" name="email" placeholder="Your email address" required aria-label="Email">
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <span class="logo">L'ESSENCE</span>
+      </div>
+      <div class="site-footer__grid">
+        <div>
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#journal">Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>&copy; 2026 L'ESSENCE. All rights reserved.</span>
+        <div class="site-footer__legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="search-overlay" role="dialog" aria-label="Search">
+    <div class="search-overlay__box">
+      <input type="search" placeholder="Search fragrances..." aria-label="Search">
+      <button type="button" class="btn btn--outline" data-search-close>Close</button>
+    </div>
+  </div>
+
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

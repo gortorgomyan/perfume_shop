@@ -1,0 +1,13 @@
+---
+description: L ESSENCE perfume site HTML CSS JS conventions
+globs: lessence/**/*
+alwaysApply: false
+---
+
+# L ESSENCE Website
+
+- HTML, CSS, vanilla JS only. No frameworks.
+- Colors and fonts via CSS variables in css/styles.css.
+- Cart in js/cart.js (localStorage key lessence_cart).
+- Images in images/ with object-fit cover.
+- Reference design-reference.png for layout.

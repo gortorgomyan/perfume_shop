@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura — L'ESSENCE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-price="220">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="logo">L'ESSENCE</a>
+      <nav class="nav-main" aria-label="Main">
+        <a href="shop.html" class="active">Shop</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#journal">Journal</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn menu-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <button type="button" class="icon-btn" data-search-open aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg></button>
+        <button type="button" class="icon-btn" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg></button>
+        <a href="checkout.html" class="icon-btn cart-link" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg><span class="cart-count" style="display:none">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container product-detail">
+      <div class="product-detail__gallery-main">
+        <img src="images/aura-main.jpg" alt="Aura perfume bottle">
+      </div>
+      <div class="product-detail__info">
+        <h1>Aura</h1>
+        <p class="product-detail__price">$220.00</p>
+        <p class="product-detail__desc">A luminous composition of golden amber, sun-warmed hay, and soft musk — like the last light of day settling over an open field.</p>
+        <div class="size-options">
+          <label>Size</label>
+          <div class="size-options__buttons">
+            <button type="button" class="size-btn active" data-size="50ml">50ml</button>
+            <button type="button" class="size-btn" data-size="100ml">100ml</button>
+          </div>
+        </div>
+        <div class="quantity-row">
+          <div class="quantity-control">
+            <button type="button" data-qty-dec aria-label="Decrease">−</button>
+            <span id="qty">1</span>
+            <button type="button" data-qty-inc aria-label="Increase">+</button>
+          </div>
+          <button type="button" class="btn btn--primary" id="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container product-gallery-row">
+      <img src="images/aura-lifestyle-1.jpg" alt="Aura lifestyle">
+      <img src="images/aura-lifestyle-2.jpg" alt="Aura on marble surface">
+    </div>
+
+    <section class="story-section">
+      <div class="container split-section">
+        <div class="story-section__text">
+          <h2>The Story of Aura</h2>
+          <p>Inspired by twilight over golden fields, Aura captures the warmth of fading sunlight and the calm that follows. Top notes of bergamot and saffron open into a heart of iris and hay absolute.</p>
+          <p>The base lingers with amber, musk, and a whisper of vanilla — intimate, radiant, and unmistakably refined.</p>
+        </div>
+        <div class="story-section__image">
+          <img src="images/aura-field.jpg" alt="Sunset over a golden field">
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="section-title section-title--left">Reviews</h2>
+        <div class="reviews__summary">
+          <span class="stars" aria-label="4.8 out of 5">★★★★★</span>
+          <span>4.8 &middot; 124 reviews</span>
+        </div>
+        <article class="review-item">
+          <div class="review-item__header">
+            <span class="review-item__name">Elena M.</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <p>Absolutely divine. Aura feels like wearing golden hour — warm, elegant, and never overpowering.</p>
+        </article>
+        <article class="review-item">
+          <div class="review-item__header">
+            <span class="review-item__name">James R.</span>
+            <span class="stars">★★★★☆</span>
+          </div>
+          <p>A beautiful everyday scent. The dry-down is my favourite — soft, musky, and sophisticated.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">You May Also Like</h2>
+        <div class="product-grid product-grid--4">
+          <article class="product-card">
+            <a href="product.html" class="product-card__image"><img src="images/shop-4.jpg" alt="Amber Sky"></a>
+            <h3><a href="product.html">Amber Sky</a></h3>
+            <p class="price">$185.00</p>
+          </article>
+          <article class="product-card">
+            <a href="product.html" class="product-card__image"><img src="images/shop-5.jpg" alt="Rose and Oud"></a>
+            <h3><a href="product.html">Rose &amp; Oud</a></h3>
+            <p class="price">$210.00</p>
+          </article>
+          <article class="product-card">
+            <a href="product.html" class="product-card__image"><img src="images/shop-2.jpg" alt="Citrus Veil"></a>
+            <h3><a href="product.html">Citrus Veil</a></h3>
+            <p class="price">$195.00</p>
+          </article>
+          <article class="product-card">
+            <a href="product.html" class="product-card__image"><img src="images/shop-6.jpg" alt="Velvet Dusk"></a>
+            <h3><a href="product.html">Velvet Dusk</a></h3>
+            <p class="price">$240.00</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top"><span class="logo">L'ESSENCE</span></div>
+      <div class="site-footer__grid">
+        <div><h4>Customer Service</h4><ul><li><a href="#">Contact Us</a></li><li><a href="#">Shipping</a></li></ul></div>
+        <div><h4>About Us</h4><ul><li><a href="index.html#about">Our Story</a></li><li><a href="shop.html">Shop</a></li></ul></div>
+        <div><h4>Follow Us</h4><ul><li><a href="#">Instagram</a></li></ul></div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>&copy; 2026 L'ESSENCE. All rights reserved.</span>
+        <div class="site-footer__legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="search-overlay" role="dialog" aria-label="Search">
+    <div class="search-overlay__box">
+      <input type="search" placeholder="Search fragrances..." aria-label="Search">
+      <button type="button" class="btn btn--outline" data-search-close>Close</button>
+    </div>
+  </div>
+
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>
