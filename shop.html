@@ -59,42 +59,11 @@
       </aside>
 
       <div>
-        <div class="shop-grid">
-          <article class="product-card" data-family="oriental" data-collection="signature" data-price="220">
-            <a href="product.html" class="product-card__image"><img src="images/aura-main.jpg" alt="Aura"></a>
-            <h3><a href="product.html">Aura</a></h3>
-            <p class="price">$220.00</p>
-          </article>
-          <article class="product-card" data-family="woody" data-collection="signature" data-price="185">
-            <a href="product.html" class="product-card__image"><img src="images/shop-4.jpg" alt="Amber Sky"></a>
-            <h3><a href="product.html">Amber Sky</a></h3>
-            <p class="price">$185.00</p>
-          </article>
-          <article class="product-card" data-family="floral" data-collection="atelier" data-price="210">
-            <a href="product.html" class="product-card__image"><img src="images/shop-5.jpg" alt="Rose and Oud"></a>
-            <h3><a href="product.html">Rose &amp; Oud</a></h3>
-            <p class="price">$210.00</p>
-          </article>
-          <article class="product-card" data-family="fresh" data-collection="limited" data-price="195">
-            <a href="product.html" class="product-card__image"><img src="images/shop-2.jpg" alt="Citrus Veil"></a>
-            <h3><a href="product.html">Citrus Veil</a></h3>
-            <p class="price">$195.00</p>
-          </article>
-          <article class="product-card" data-family="woody" data-collection="atelier" data-price="175">
-            <a href="product.html" class="product-card__image"><img src="images/shop-1.jpg" alt="Noir Cedar"></a>
-            <h3><a href="product.html">Noir Cedar</a></h3>
-            <p class="price">$175.00</p>
-          </article>
-          <article class="product-card" data-family="oriental" data-collection="limited" data-price="240">
-            <a href="product.html" class="product-card__image"><img src="images/shop-6.jpg" alt="Velvet Dusk"></a>
-            <h3><a href="product.html">Velvet Dusk</a></h3>
-            <p class="price">$240.00</p>
-          </article>
-        </div>
+        <div class="shop-grid" id="shop-grid"></div>
         <nav class="pagination" aria-label="Pagination">
-          <button type="button" class="active">1</button>
-          <button type="button">2</button>
-          <button type="button">Next</button>
+          <button type="button" class="active" data-page="1">1</button>
+          <button type="button" data-page="2">2</button>
+          <button type="button" data-action="next">Next</button>
         </nav>
       </div>
     </div>
@@ -122,6 +91,7 @@
     </div>
   </div>
 
+  <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script src="js/main.js"></script>
   <script src="js/shop.js"></script>
